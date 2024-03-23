@@ -3,9 +3,9 @@
 #include "person.h"
 #include "subject.h"
 
-#define MAX_STUDENTS 4
-#define MAX_TEACHERS 3
-#define MAX_SUBJECTS 4
+#define MAX_STUDENTS 10
+#define MAX_TEACHERS 10
+#define MAX_SUBJECTS 10
 
 typedef struct DataBase{
     Person students[MAX_STUDENTS];
