@@ -6,8 +6,6 @@
 #include "utils.h"
 #include "subject.h"
 
-
-
 bool validateCode(const int code){
   if(code <=0){
     printf("Codigo da disciplina invalido!\n");
@@ -239,7 +237,7 @@ void listSubjects(Subject* subjects, int numberOfSubjects, Person* teachers, int
   for(int i = 0; i < numberOfSubjects; i++){
     printf("Disciplina %d:\n", i + 1);
     printf("Nome: %s\n", subjects[i].name);
-    printf("Codigo: %d\n", subjects->code);
+    printf("Codigo: %d\n", subjects[i].code);
     printf("Periodo: %d\n", subjects[i].period);
     Person* teacher = getPersonByRegist(teachers, numberOfTeachers, subjects[i].teacherRegist);
     if(teacher != NULL){

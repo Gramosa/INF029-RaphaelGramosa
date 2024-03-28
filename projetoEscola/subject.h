@@ -7,7 +7,7 @@ typedef struct DataBase DataBase;
 #ifndef SUBJECT_H
 #define SUBJECT_H
 
-#define MAX_STUDENTS_CLASS 4
+#define MAX_STUDENTS_CLASS 5
 
 typedef struct Subject{
     char name[MAX_LETTERS];
