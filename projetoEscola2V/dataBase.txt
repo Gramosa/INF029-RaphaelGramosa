@@ -1,0 +1,5 @@
+Student: 1; 24; 1; 1; 2000; M; Joao Pessoa; 12345678909
+Student: 2; 30; 3; 5; 1993; M; Antonio Donatelo; 12345678909
+Teacher: 1; 73; 15; 9; 1950; M; Diniz Tantan; 56040728000
+Subject: 1; 1; 2; 1; Mat; 1 2
+Subject: 2; 1; 0; 0; Portugues;
