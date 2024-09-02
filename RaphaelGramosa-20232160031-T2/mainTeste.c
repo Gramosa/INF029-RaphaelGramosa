@@ -29,9 +29,9 @@ int main()
   testeExcluir();
   //printf("Iniciando o teste: Excluir número específico\n");
   testeExcluirNumeroEspecifico();
-  printf("Iniciando o teste: Listar\n");
+  //printf("Iniciando o teste: Listar\n");
   testeListar();
-  printf("Iniciando o teste: Retornar todos os números\n");
+  //printf("Iniciando o teste: Retornar todos os números\n");
   testeRetornarTodosNumeros();
   //printf("Iniciando o teste: Mudar tamanho da estrutura\n");
   testeMudarTamanhoEstrutura();
@@ -158,7 +158,6 @@ void testeRetornarTodosNumeros()
     show_log("testeRetornarTodosNumeros()");
     int vet1[2];
     printf("%d\n", getDadosDeTodasEstruturasAuxiliares(vet1) == TODAS_ESTRUTURAS_AUXILIARES_VAZIAS);
-    
     printf("%d\n", getDadosOrdenadosDeTodasEstruturasAuxiliares(vet1) == TODAS_ESTRUTURAS_AUXILIARES_VAZIAS);
 
     printf("%d\n", inserirNumeroEmEstrutura(2, 3) == SUCESSO);
@@ -276,10 +275,6 @@ void testeListaEncadeada()
     int vet[10];
     No *inicio = montarListaEncadeadaComCabecote();
     getDadosListaEncadeadaComCabecote(inicio, vet);
-    // for(int i = 0; i < 10; i++){
-    //   printf("%d ", vet[i]);
-    // }
-    printf("\n");
     printf("%d\n", vet[0] == 3);
     printf("%d\n", vet[1] == 4);
     printf("%d\n", vet[2] == -2);

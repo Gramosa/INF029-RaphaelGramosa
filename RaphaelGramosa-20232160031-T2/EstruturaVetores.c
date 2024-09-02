@@ -257,7 +257,7 @@ int getDadosOrdenadosEstruturaAuxiliar(int posicao, int vetorAux[])
   //para converter da numeracao que comeca em 1, para comecar em 0
   posicao--;
 
-  EstAux* e = vetorPrincipal[posicao];  
+  EstAux* e = vetorPrincipal[posicao];
 
   for(int i = 0; i <= e->pos; i++){
     for(int j = i + 1; j <= e->pos; j++){
@@ -286,7 +286,7 @@ int getDadosDeTodasEstruturasAuxiliares(int vetorAux[])
   for(int i = 0; i < TAM; i++){
     EstAux* e = vetorPrincipal[i];
     if(e != NULL && !is_empty(*e)){
-      getDadosEstruturaAuxiliar(i+1, vetorAux); //j+1 por causa do posicao-- da funcao
+      getDadosEstruturaAuxiliar(i+1, vetorAux); //i+1 por causa do posicao-- da funcao
       vetorAux += e->pos + 1;
     }
   }
@@ -313,11 +313,11 @@ int getDadosOrdenadosDeTodasEstruturasAuxiliares(int vetorAux[])
     return retorno;
   }
 
-  int total_size = 0;
+  int total_size = 1;
   for(int i = 0; i < TAM; i++){
     EstAux* e = vetorPrincipal[i];
     if(e != NULL && !is_empty(*e)){
-      total_size += e->pos + 1;
+      total_size += e->pos;
     }
   }
 
